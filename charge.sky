@@ -1,0 +1,13 @@
+
+
+requireInput("callsCount", "integer")
+requireInput("totalMinutes", "integer")
+requireInput("longestCallMinutes", "integer")
+requireInput("favoriteColor", "string")
+
+def computeCharge(callsCount, totalMinutes, longestCallMinutes, favoriteColor):
+    if favoriteColor == "blue":
+        return 0.03 * callsCount + 0.07 * (totalMinutes - longestCallMinutes) + 0.04 * longestCallMinutes
+
+    return 0.03 * callsCount + 0.10 * (totalMinutes - longestCallMinutes) + 0.04 * longestCallMinutes
+    
